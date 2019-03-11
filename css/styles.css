@@ -15,8 +15,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
 }
 
 .main-content {
@@ -34,7 +33,7 @@ h2 {
 
 .section-titles {
   text-align: center;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
 }
 
 .large-image {
@@ -158,29 +157,43 @@ nav li {
 
 /* Learning Section Styles */
 #learning-section {
-  padding: 0 4.5rem;
+  padding: 2rem 3.5rem;
   background-color: lightgrey;
 }
 
-.learning-features {
+#learning-section .learning-features {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-top: 2rem;
+}
+
+#learning-section img {
+  width: 100%;
+}
+
+#learning-section h3 {
+  padding: .5rem 0;
+  line-height: 1.5rem;
 }
 
 .feature {
+  width: 32%;
+  margin-bottom:2rem;
   background-color: white;
 }
 
 .feature .content {
-  padding-left: 1rem;
-  padding-bottom: 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
-.feature .image-container {
-  height: auto;
-}
 
 /* Thesis Section Styles */
+#thesis-section {
+  padding: 2rem 3.5rem;
+}
+
 #thesis-section .content {
   display: flex;
   align-items: flex-start;
