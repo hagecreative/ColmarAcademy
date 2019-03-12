@@ -30,6 +30,7 @@
 html {
   font-family: "Abel", sans-serif;
   font-size: 1.25rem;
+  color: #333;
 }
 
 h1 {
@@ -37,11 +38,18 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   padding: .75rem 0;
+  color: black;
 }
 
 h2 {
   font-family: "Istok Web", sans-serif;
   font-size: 1.25rem;
+}
+
+a {
+  color: #557a95;
+  text-decoration: underline;
+  padding-top: .5rem;
 }
 
 .main-content {
@@ -55,6 +63,7 @@ h2 {
   background-color: #333;
   color: white;
   display: block;
+  margin-top: 1.5rem;
 }
 
 .section-titles {
@@ -151,6 +160,36 @@ nav li {
   padding-left: 1rem;
 }
 
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .colmar,
+  .academy {
+    display: none;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+
+  header .mobile li {
+    padding: 0;
+  }
+}
 
 
 /* Start Section Styles */
