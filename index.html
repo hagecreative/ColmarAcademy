@@ -6,6 +6,10 @@
   <title>Colmar Academy</title>
   <link rel="stylesheet" href="./css/reset.css" type="text/css">
   <link rel="stylesheet" href="./css/styles.css" type="text/css">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/v4-shims.css">
 </head>
 
 <body>
@@ -17,7 +21,7 @@
         <span class="colmar">Colmar</span><span class="academy">Academy</span>
       </div>
       <nav class="desktop">
-        <ul>
+        <ul role="presentation">
           <li>On Campus</li>
           <li>Online</li>
           <li>Or Companies</li>
@@ -25,7 +29,8 @@
         </ul>
       </nav>
       <nav class="mobile">
-        <ul>
+        <ul role="presentation">
+          <li><img class="icon" src="./assets/images/ic-logo.svg" alt="Colmar Academy Logo" /></li>
           <li><img class="icon" src="./assets/images/ic-on-campus.svg" alt="on campus icon"></li>
           <li><img class="icon" src="./assets/images/ic-online.svg" alt="online icon"></li>
           <li><img class="icon" src="./assets/images/ic-login.svg" alt="login icon"></li>
@@ -47,12 +52,12 @@
           <h1>Learn something new everyday</h1>
           <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
         </div>
-        <div class="button">Start Here</div>
+        <div class="button" role="button">Start Here</div>
       </div>
     </div>
 
     <!-- Practicing Section -->
-    <div id="practicing-section">
+    <div id="practicing-section" role="article">
       <div class="content">
         <div class="large-column">
           <div>
@@ -65,15 +70,16 @@
             <div class="feature-text">
               <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
             </div>
-            <div class="author">
+            <div class="author" role="author">
               <p>Emanuel, Sr Strategist at Hiring.com</p>
             </div>
           </div>
         </div>
-        <div class="medium-content">
+        <div class="medium-content" role="article">
           <div class="content-list">
             <div class="medium-image">
-              <img src="./assets/images/information-orientation.jpg" alt="People Walking on Brick Path">
+              <img class="desktop-img" src="./assets/images/information-orientation.jpg" alt="People Walking on Brick Path">
+              <img class="mobile-img" src="./assets/images/information-orientation-mobile.jpg" alt="People Walking on Brick Path">
             </div>
             <div class="content-info">
               <h2>Orientation Date</h2>
@@ -83,7 +89,8 @@
           </div>
           <div class="content-list">
             <div class="medium-image">
-              <img src="./assets/images/information-campus.jpg" alt="Students studying">
+              <img class="desktop-img" src="./assets/images/information-campus.jpg" alt="Students studying">
+              <img class="mobile-img" src="./assets/images/information-campus-mobile.jpg" alt="Students studying">
             </div>
             <div class="content-info">
               <h2>Our Campus</h2>
@@ -93,7 +100,8 @@
           </div>
           <div class="content-list">
             <div class="medium-image">
-              <img src="./assets/images/information-guest-lecture.jpg" alt="Portrait of a Man">
+              <img class="desktop-img" src="./assets/images/information-guest-lecture.jpg" alt="Portrait of Oliver Sack">
+              <img class="mobile-img" src="./assets/images/information-guest-lecture-mobile.jpg" alt="Portrait of Oliver Sack">
             </div>
             <div class="content-info">
               <h2>Our Guest Lecture</h2>
@@ -106,7 +114,7 @@
     </div>
 
     <!-- Learning Section -->
-    <div id="learning-section">
+    <div id="learning-section" role="article">
       <div class="section-titles">
         <h1>Start Learning</h1>
       </div>
@@ -160,11 +168,19 @@
           </div>
         </div>
       </div>
+      <div class="learning-courses">
+        <a class="button" href="#">Software Enginering</a>
+        <a class="button" href="#">Computer Art</a>
+        <a class="button" href="#">Design</a>
+        <a class="button" href="#">Data</a>
+        <a class="button" href="#">Business</a>
+        <a class="button" href="#">Marketing</a>
+      </div>
     </div>
 
 
     <!-- Thesis Section -->
-    <div id="thesis-section">
+    <div id="thesis-section" role="article">
       <div class="section-titles">
         <h1>Thesis Exhibit</h1>
       </div>
@@ -210,7 +226,11 @@
     <footer>
       <div class="content">
         <span class="copyright">© 2016 Colmar Academy. All Rights Reserved</span>
-        <span class="terms">Terms Privacy</span>
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-pinterest"></i>
+        <span class="terms">Terms | Privacy</span>
       </div>
     </footer>
   </div>
