@@ -169,6 +169,10 @@ header .mobile {
   display: none;
 }
 
+.medium-content div.content-list:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+
 @media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
@@ -197,6 +201,11 @@ header .mobile {
 
   header .mobile li {
     padding: 0;
+  }
+
+  h1 {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
 }
 
@@ -256,6 +265,10 @@ header .mobile {
   padding: 1.5rem 2rem;
 }
 
+#practicing-section .medium-content {
+  border-left: #F5F5F5 solid 1px;
+}
+
 #practicing-section .large-column img {
   max-width: 100%;
   padding-bottom: 2rem;
@@ -281,7 +294,10 @@ header .mobile {
   #practicing-section .content-list {
     display: block;
     position: relative;
-    padding-bottom: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #practicing-section .medium-image {
@@ -297,6 +313,14 @@ header .mobile {
   #practicing-section .mobile-img {
     display: block;
   }
+
+  #practicing-section .medium-content {
+    border-left: none;
+  }
+
+  #practicing-section .medium-content div.content-list:nth-child(odd) {
+      background-color: white;
+    }
 }
 
 /* Learning Section Styles */
@@ -336,9 +360,17 @@ header .mobile {
   display: none;
 }
 
+#learning-section h3 {
+  padding: .5rem 0;
+  line-height: 1.5rem;
+}
+
 @media only screen and (max-width: 760px) {
   #learning-section {
-    padding: 2rem 1rem;
+  padding-top: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2rem;
   }
 
   #learning-section .learning-features {
@@ -350,9 +382,11 @@ header .mobile {
   }
 
   #learning-section .button {
-    padding: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
     text-decoration: none;
     font-size: 1.5rem;
+    margin-top: .5rem;
   }
 }
 
@@ -374,24 +408,22 @@ header .mobile {
 
 #thesis-section .content-list {
   padding: 1rem;
+  border-left: #F5F5F5 solid 1px;
 }
 
-#learning-section h3 {
-  padding: .5rem 0;
-  line-height: 1.5rem;
-}
+
 
 @media only screen and (max-width: 760px) {
   #thesis-section {
-    margin-top: 2rem;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     padding: 0;
   }
 
   #thesis-section .content {
     max-width: 100%;
+    padding-top: 0;
   }
 
   #thesis-section .large-content {
@@ -410,6 +442,7 @@ header .mobile {
 
   #thesis-section video {
     max-width: 100%;
+    padding-bottom: 0;
   }
 }
 
